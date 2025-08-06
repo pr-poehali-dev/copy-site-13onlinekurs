@@ -16,66 +16,57 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-in">
               <div className="space-y-6">
-                <Badge variant="secondary" className="text-sm font-medium bg-primary/20 text-primary border-primary/30">
-                  🚀 Частный практический интенсив
+                <Badge variant="secondary" className="text-sm font-medium bg-green-500/20 text-green-400 border-green-500/30">
+                  🎯 Бесплатный живой мастер-класс во Владивостоке
                 </Badge>
-                <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    НЕЙРОСЕТИ 2025:
+                    НЕЙРОСЕТИ
                   </span>
                   <br />
-                  <span className="text-foreground">ДЛЯ БИЗНЕСА, КАРЬЕРЫ</span>
+                  <span className="text-foreground">ДЛЯ БИЗНЕСА,</span>
                   <br />
-                  <span className="text-accent">И ДОХОДА</span>
+                  <span className="text-accent">ПРОДВИЖЕНИЯ И ЗАРАБОТКА</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                  Без глупых заданий и теории — только практические кейсы. Научитесь использовать ИИ для реальных задач и увеличения дохода.
+                  Никакого программирования и технических сложностей. Только практика.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                    <Icon name="Calendar" className="text-primary" size={16} />
                   </div>
-                  <span className="text-lg text-muted-foreground">Старт: 20 января 2025</span>
+                  <span className="text-lg text-muted-foreground">25 мая, 15:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                    <Icon name="MapPin" className="text-secondary" size={16} />
                   </div>
-                  <span className="text-lg text-muted-foreground">7 дней практического обучения</span>
+                  <span className="text-lg text-muted-foreground">Точка кипения, Владивосток</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                    <Icon name="User" className="text-accent" size={16} />
                   </div>
-                  <span className="text-lg text-muted-foreground">Осталось 21 место</span>
+                  <span className="text-lg text-muted-foreground">Ведущий — эксперт-практик Сергей Черников</span>
                 </div>
               </div>
 
-              <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
+              <div className="bg-card/50 backdrop-blur-sm border border-green-500/20 rounded-2xl p-8">
                 <div className="text-center mb-6">
-                  <div className="inline-block px-6 py-2 bg-primary/10 rounded-full border border-primary/20 mb-4">
-                    <span className="text-sm text-primary font-medium">🎁 БОНУС ЗА РЕГИСТРАЦИЮ!</span>
+                  <div className="inline-block px-6 py-2 bg-green-500/10 rounded-full border border-green-500/20 mb-4">
+                    <span className="text-sm text-green-400 font-medium">🎁 БЕСПЛАТНОЕ УЧАСТИЕ</span>
                   </div>
-                  <div className="flex items-center justify-center gap-4">
-                    <div className="text-right">
-                      <div className="text-sm text-muted-foreground line-through">15 000 ₽</div>
-                      <div className="text-4xl font-bold text-primary">2 990 ₽</div>
-                    </div>
-                    <div className="w-px h-16 bg-primary/20"></div>
-                    <div className="text-left">
-                      <div className="text-sm text-muted-foreground">Скидка</div>
-                      <div className="text-2xl font-bold text-accent">80%</div>
-                    </div>
-                  </div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">0 ₽</div>
+                  <div className="text-sm text-muted-foreground">3 часа живого обучения + бонусы</div>
                 </div>
-                <Button size="lg" className="w-full text-lg font-bold py-6 bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
-                  ЗАПИСАТЬСЯ НА ИНТЕНСИВ
+                <Button size="lg" className="w-full text-lg font-bold py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
+                  ЗАНЯТЬ МЕСТО БЕСПЛАТНО
                 </Button>
                 <p className="text-sm text-muted-foreground mt-4 text-center">
-                  ⏰ Скидка действует только до 15 января
+                  ⏰ Количество мест ограничено
                 </p>
               </div>
             </div>
@@ -94,42 +85,86 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Warning Section */}
-      <section className="py-20 bg-gradient-to-r from-red-900/20 to-orange-900/20 border-y border-red-500/20">
+      {/* What You Get Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-red-400">
-              У ВАС БОЛЬШЕ НЕТ ВЫБОРА. УЧИТЬСЯ РАБОТЕ С НЕЙРОСЕТЯМИ ИЛИ НЕТ
-            </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Уже сейчас нейросети заменяют сотни профессий. В ближайшие 2 года ИИ кардинально изменит рынок труда. 
-              Те, кто освоит нейросети сейчас — станут востребованными специалистами. 
-              Остальные — рискуют потерять работу и доходы.
-            </p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">ЗА 3 ЧАСА ЖИВОЙ ВСТРЕЧИ ВО ВЛАДИВОСТОКЕ ВЫ ПОЛУЧИТЕ:</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="Zap" className="text-primary" size={32} />
+                </div>
+                <CardTitle className="text-xl text-primary">Всё для уверенного старта</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  в ChatGPT, Midjourney и ещё 7 актуальных нейросетях
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="border border-secondary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <CardHeader>
+                <div className="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="FileText" className="text-secondary" size={32} />
+                </div>
+                <CardTitle className="text-xl text-secondary">Готовые запросы</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  для нейросетей под ваши задачи: от постов для соцсетей до разработки бизнес-стратегии
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="border border-accent/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <CardHeader>
+                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="DollarSign" className="text-accent" size={32} />
+                </div>
+                <CardTitle className="text-xl text-accent">Понятный алгоритм заработка</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  на нейросетях, который можно применить сразу после мастер-класса
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="Star" className="text-primary" size={32} />
+                </div>
+                <CardTitle className="text-xl text-primary">Лучшие кейсы</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  использования AI в бизнесе, маркетинге и творчестве
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Problems Section */}
-      <section className="py-20">
+      {/* Possibilities Section */}
+      <section className="py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">ПОЧЕМУ ЧТО С ПОМОЩЬЮ НЕЙРОСЕТЕЙ ВЫ СМОЖЕТЕ:</h2>
+            <h2 className="text-4xl font-bold mb-6">ПРЕДСТАВЬТЕ, ЧТО ВЫ МОЖЕТЕ:</h2>
+            <p className="text-xl text-muted-foreground">
+              Уже сегодня работа с нейросетями — это ключевой навык, который открывает новые возможности
+            </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-6">
-                  <img 
-                    src="/img/e90f3a65-cd3c-4659-a370-4fe0de929f33.jpg" 
-                    alt="AI Chip" 
-                    className="w-20 h-20 object-cover rounded-2xl icon-3d"
-                  />
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center icon-3d">
+                    <Icon name="Calendar" className="text-primary" size={32} />
+                  </div>
                 </div>
-                <CardTitle className="text-xl text-primary">Подготовиться заранее для сферы соцсети</CardTitle>
+                <CardTitle className="text-xl text-primary">Подготовить контент-план</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  на месяц за 30 минут — создание контента, автоматизация постов, анализ аудитории
+                  для всех соцсетей на месяц вперед за 20 минут
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -139,13 +174,13 @@ const Index = () => {
                 <div className="mx-auto mb-6">
                   <img 
                     src="/img/e3591367-62ca-442a-886d-060a0bc4cef6.jpg" 
-                    alt="Data Visualization" 
+                    alt="Creative AI" 
                     className="w-20 h-20 object-cover rounded-2xl icon-3d"
                   />
                 </div>
-                <CardTitle className="text-xl text-secondary">Создать за минуты контент</CardTitle>
+                <CardTitle className="text-xl text-secondary">Создать яркие иллюстрации</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  который другие делают часами — тексты, изображения, видео, презентации
+                  баннеры и креативы для рекламы или презентаций за минуты
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -154,12 +189,12 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="mx-auto mb-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center icon-3d">
-                    <Icon name="TrendingUp" className="text-accent" size={32} />
+                    <Icon name="Target" className="text-accent" size={32} />
                   </div>
                 </div>
-                <CardTitle className="text-xl text-accent">Разработать маркетинговые стратегии</CardTitle>
+                <CardTitle className="text-xl text-accent">Разработать стратегию</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  которые приносят результат — анализ конкурентов, создание УТП, настройка рекламы
+                  маркетинговую презентацию или концепцию онлайн-продукта
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -168,12 +203,12 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="mx-auto mb-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center icon-3d">
-                    <Icon name="Code" className="text-primary" size={32} />
+                    <Icon name="Settings" className="text-primary" size={32} />
                   </div>
                 </div>
-                <CardTitle className="text-xl text-primary">Автоматизировать бизнес-процессы</CardTitle>
+                <CardTitle className="text-xl text-primary">Автоматизировать продвижение</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  проектов, чат-боты, автоответчики, системы аналитики — всё работает за вас
+                  рекламу, контент-маркетинг, работу с личным брендом
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -182,12 +217,12 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="mx-auto mb-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-2xl flex items-center justify-center icon-3d">
-                    <Icon name="MessageSquare" className="text-secondary" size={32} />
+                    <Icon name="Banknote" className="text-secondary" size={32} />
                   </div>
                 </div>
-                <CardTitle className="text-xl text-secondary">Зарабатывать от 100,000 рублей</CardTitle>
+                <CardTitle className="text-xl text-secondary">Зарабатывать от 100 000 ₽</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  в месяц на продаже ИИ-услуг — создание чат-ботов, автоматизация, консалтинг
+                  в месяц, оказывая AI-услуги клиентам
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -196,12 +231,12 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="mx-auto mb-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center icon-3d">
-                    <Icon name="Shield" className="text-accent" size={32} />
+                    <Icon name="Users" className="text-accent" size={32} />
                   </div>
                 </div>
-                <CardTitle className="text-xl text-accent">Жить спокойно в эпоху ИИ</CardTitle>
+                <CardTitle className="text-xl text-accent">Делегировать рутину</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  зная, что ваши навыки всегда будут востребованы и принесут стабильный доход
+                  AI-ассистентам: продавцу, копирайтеру, дизайнеру, маркетологу
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -209,104 +244,107 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Not Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-900/20 to-orange-900/20">
+      {/* Myths Section */}
+      <section className="py-20 bg-gradient-to-r from-red-900/20 to-orange-900/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-yellow-400">И ДЛЯ ЭТОГО НЕ НУЖНЫ:</h2>
+            <h2 className="text-4xl font-bold mb-6 text-orange-400">РАЗВЕЕМ ПОПУЛЯРНЫЕ МИФЫ:</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            <Card className="border border-yellow-500/20 bg-card/30 backdrop-blur-sm text-center">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="X" className="text-yellow-400" size={24} />
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="space-y-6">
+              {[
+                {
+                  myth: "Нужны навыки программирования",
+                  reality: "Вся работа ведётся на обычном, «человеческом» языке. Нужен только правильный подход к созданию запросов (промтов)."
+                },
+                {
+                  myth: "Нужно много времени", 
+                  reality: "Любая задача решается в 10–15 раз быстрее, чем вручную."
+                },
+                {
+                  myth: "Это дорого",
+                  reality: "Абсолютно всё (от написания постов до создания видео) можно делать бесплатно."
+                },
+                {
+                  myth: "Нужна большая команда",
+                  reality: "Наоборот, вы соберёте собственную команду из AI-сотрудников, которым не нужно платить зарплату."
+                }
+              ].map((item, index) => (
+                <Card key={index} className="border border-orange-500/20 bg-card/30 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <Icon name="X" className="text-red-400" size={16} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-red-400 mb-2">{item.myth}</h3>
+                        <div className="flex items-start gap-2">
+                          <Icon name="Check" className="text-green-400 flex-shrink-0 mt-1" size={16} />
+                          <p className="text-sm text-muted-foreground">{item.reality}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-64 h-64 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-full flex items-center justify-center mb-6">
+                  <Icon name="Lightbulb" className="text-orange-400" size={80} />
                 </div>
-                <h3 className="font-bold text-yellow-400 mb-2">ОПЫТ ПРОГРАММИРОВАНИЯ</h3>
-                <p className="text-sm text-muted-foreground">Работаем через готовые интерфейсы и API</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-yellow-500/20 bg-card/30 backdrop-blur-sm text-center">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="X" className="text-yellow-400" size={24} />
-                </div>
-                <h3 className="font-bold text-yellow-400 mb-2">ТЕХНИЧЕСКИЕ ЗНАНИЯ</h3>
-                <p className="text-sm text-muted-foreground">Всё объясняем простыми словами</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-yellow-500/20 bg-card/30 backdrop-blur-sm text-center">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="X" className="text-yellow-400" size={24} />
-                </div>
-                <h3 className="font-bold text-yellow-400 mb-2">БОЛЬШОЙ СТАРТОВЫЙ КАПИТАЛ</h3>
-                <p className="text-sm text-muted-foreground">Начните с бесплатных инструментов</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-yellow-500/20 bg-card/30 backdrop-blur-sm text-center">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="X" className="text-yellow-400" size={24} />
-                </div>
-                <h3 className="font-bold text-yellow-400 mb-2">МНОГО ВРЕМЕНИ</h3>
-                <p className="text-sm text-muted-foreground">Всего 1-2 часа в день</p>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-bold px-8 py-6 hover:scale-105 transition-transform">
-              ХОЧУ НА БЕСПЛАТНЫЙ МАРАФОН И ПОМОЖТЬ ЗАРАБАТЫВАТЬ С ПОМОЩЬЮ ИИ
-            </Button>
+                <h3 className="text-2xl font-bold text-orange-400 mb-4">РЕАЛЬНОСТЬ ПРОЩЕ</h3>
+                <p className="text-muted-foreground">чем кажется на первый взгляд</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* How to Figure Out Section */}
+      {/* Expert Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">КАК В ЭТОМ ВСЁМ РАЗОБРАТЬСЯ?!</h2>
-            <p className="text-xl text-muted-foreground">
-              Я вам скажем, традиционный подход к изучению нейросетей не работает!
-            </p>
+            <h2 className="text-4xl font-bold mb-6">КТО ВЕДЕТ МАСТЕР-КЛАСС?</h2>
           </div>
           
           <div className="max-w-4xl mx-auto">
-            <Card className="border border-primary/20 bg-card/30 backdrop-blur-sm mb-12">
+            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0">
                     <img 
                       src="https://cdn.poehali.dev/files/fe1c91cb-c68e-4c0e-b3b4-36284215fcea.png" 
-                      alt="Дамир Халилов" 
+                      alt="Сергей Черников" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-primary">
-                      СПОКОЙНО! <br/>
-                      С ВАМИ ДАМИР ХАЛИЛОВ
+                    <h3 className="text-2xl font-bold mb-2 text-primary">
+                      СЕРГЕЙ ЧЕРНИКОВ
                     </h3>
-                    <p className="text-muted-foreground mb-4">
-                      ПОКАЗ ПОШУК ЕДИ ГОТОВЫЕ ПРОЦЕНТЫ
+                    <p className="text-lg text-secondary mb-4">
+                      Эксперт-практик по внедрению нейросетей в бизнес и маркетинг.<br/>
+                      Основатель первого в России AI-агентства.
                     </p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
-                        <span>Вот уже два года я изучаю и тестирую нейросети для решения бизнес-задач</span>
+                    <ul className="space-y-3 text-sm">
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
+                        <span>Вот уже два года использую нейросети для решения всех своих задач — от упаковки бизнеса до изучения языков</span>
                       </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
-                        <span>Помогаю предпринимателям внедрить ИИ в бизнесе</span>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
+                        <span>Лично выполнил более 10 000 генераций в ChatGPT и других нейросетях</span>
                       </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
-                        <span>Веду корпоративные обучения по нейросетям</span>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
+                        <span>Моя авторская методика помогла сотням фрилансеров и предпринимателей оптимизировать работу и увеличить доход</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
+                        <span>На мастер-классе во Владивостоке поделюсь только работающими инструментами и личным опытом</span>
                       </li>
                     </ul>
                   </div>
@@ -317,86 +355,140 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Registration Form */}
-      <section className="py-20 bg-gradient-to-r from-primary/20 to-secondary/20">
+      {/* Program Section */}
+      <section className="py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Заполните форму и получите доступ к материалам курса
-            </p>
-            
-            <Card className="border-0 shadow-2xl bg-card/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <Input placeholder="Ваше имя" className="text-lg p-6 bg-background/50" />
-                    <Input placeholder="Email" type="email" className="text-lg p-6 bg-background/50" />
-                  </div>
-                  <Input placeholder="Номер телефона" type="tel" className="text-lg p-6 bg-background/50" />
-                  
-                  <div className="bg-muted/30 rounded-lg p-6 text-left">
-                    <h3 className="font-semibold mb-3 text-primary">🎁 Вы получите:</h3>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-accent" size={16} />
-                        <span>Доступ к 7 урокам интенсива</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-accent" size={16} />
-                        <span>Практические домашние задания</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-accent" size={16} />
-                        <span>Чек-листы и шаблоны для работы</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-accent" size={16} />
-                        <span>Сертификат о прохождении курса</span>
-                      </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">ЧТО МЫ УСПЕЕМ ЗА 3 ЧАСА:</h2>
+          </div>
+          
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Быстрый старт в нейросетях",
+                description: "Как освоить AI с нуля, даже если вы никогда с ним не работали"
+              },
+              {
+                title: "Обзор ключевых нейросетей",
+                description: "Разберем ChatGPT, YandexGPT, Midjourney, HeyGen и другие. Покажу, как ими пользоваться из России"
+              },
+              {
+                title: "Искусство промт-инжиниринга",
+                description: "Научимся составлять запросы так, чтобы нейросеть понимала вас с полуслова и давала идеальный результат"
+              },
+              {
+                title: "Контент «под ключ»",
+                description: "Создадим посты, сценарии для видео и визуал для ваших соцсетей прямо на мастер-классе"
+              },
+              {
+                title: "Создание иллюстраций мирового уровня",
+                description: "Пошаговый алгоритм работы в Midjourney для генерации картинок, которые цепляют"
+              },
+              {
+                title: "Нейросети для бизнеса",
+                description: "Готовые промты для маркетинга, продаж и автоматизации рутинных процессов"
+              },
+              {
+                title: "Стратегия заработка",
+                description: "Разберем 30+ способов монетизации навыков работы с AI и выберем тот, что подходит именно вам"
+              },
+              {
+                title: "Интерактив",
+                description: "Ответы на ваши вопросы вживую"
+              }
+            ].map((item, index) => (
+              <Card key={index} className="border border-primary/20 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <CardTitle className="text-xl text-primary">{item.title}</CardTitle>
+                      <CardDescription className="text-base mt-2 text-muted-foreground">{item.description}</CardDescription>
                     </div>
                   </div>
-                  
-                  <Button size="lg" className="w-full text-lg font-bold py-6 bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
-                    ЗАПИСАТЬСЯ ЗА 2 990 ₽
-                  </Button>
-                  
-                  <p className="text-sm text-muted-foreground">
-                    Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary via-secondary to-accent">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 text-white">НЕ УПУСТИТЕ ВОЗМОЖНОСТЬ</h2>
-          <p className="text-xl mb-8 text-white/90">
-            Интенсив стартует 20 января. Осталось всего 21 место!
-          </p>
-          <div className="flex items-center justify-center gap-8 mb-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">15</div>
-              <div className="text-sm text-white/75">дней</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">7</div>
-              <div className="text-sm text-white/75">часов</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">42</div>
-              <div className="text-sm text-white/75">минуты</div>
+      {/* Registration Form */}
+      <section className="py-20 bg-gradient-to-r from-green-900/20 to-primary/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-6">РЕГИСТРАЦИЯ НА МАСТЕР-КЛАСС</h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Готовы получить самый востребованный навык 2025 года?
+            </p>
+            
+            <Card className="border border-green-500/20 shadow-2xl bg-card/80 backdrop-blur-sm mb-8">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="grid gap-4">
+                    <Input placeholder="Введите ваше имя" className="text-lg p-6 bg-background/50" />
+                    <Input placeholder="Введите ваш эл. адрес" type="email" className="text-lg p-6 bg-background/50" />
+                    <Input placeholder="Введите ваш телефон" type="tel" className="text-lg p-6 bg-background/50" />
+                  </div>
+                  
+                  <div className="bg-green-500/10 rounded-lg p-6 text-left border border-green-500/20">
+                    <h3 className="font-semibold mb-3 text-green-400">🎁 Что вы получаете:</h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="text-green-400" size={16} />
+                        <span>Бесплатное участие в живом 3-часовом мастер-классе</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="text-green-400" size={16} />
+                        <span>Возможность задать вопрос Сергею Черникову лично</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="text-green-400" size={16} />
+                        <span>Бонус: Гайд «15 задач по созданию контента с помощью нейросетей»</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="text-green-400" size={16} />
+                        <span>Нетворкинг с предпринимателями и специалистами Владивостока</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <Button size="lg" className="w-full text-lg font-bold py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
+                    ЗАПИСАТЬСЯ НА МАСТЕР-КЛАСС
+                  </Button>
+                  
+                  <p className="text-xs text-muted-foreground">
+                    Нажимая на кнопку, я даю согласие на обработку персональных данных в соответствии с условиями Политики конфиденциальности и Оферты, а также на получение информационных рассылок.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/20">
+              <div className="flex items-center gap-4 text-muted-foreground">
+                <Icon name="Calendar" className="text-primary" size={20} />
+                <span><strong>Когда:</strong> 25 мая, в 15:00 по владивостокскому времени</span>
+              </div>
+              <div className="flex items-center gap-4 text-muted-foreground mt-2">
+                <Icon name="MapPin" className="text-secondary" size={20} />
+                <span><strong>Где:</strong> г. Владивосток, ул. Светланская, 22, «Точка кипения»</span>
+              </div>
             </div>
           </div>
-          <Button size="lg" variant="secondary" className="text-lg font-bold px-8 py-6 bg-white text-primary hover:scale-105 transition-transform">
-            ЗАПИСАТЬСЯ СЕЙЧАС
-          </Button>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-10 bg-card/20 backdrop-blur-sm border-t border-primary/20">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-muted-foreground text-sm">
+            © 2025 Все права защищены<br/>
+            ИП Черников Сергей Николаевич
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
