@@ -12,14 +12,14 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
-        <div className="container mx-auto px-4 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-slide-in">
-              <div className="space-y-6">
-                <Badge variant="secondary" className="text-sm font-medium bg-green-500/20 text-green-400 border-green-500/30">
+        <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-6 sm:space-y-8 animate-slide-in order-2 lg:order-1">
+              <div className="space-y-4 sm:space-y-6">
+                <Badge variant="secondary" className="text-xs sm:text-sm font-medium bg-green-500/20 text-green-400 border-green-500/30">
                   🎯 Бесплатный живой мастер-класс во Владивостоке
                 </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                     НЕЙРОСЕТИ
                   </span>
@@ -28,113 +28,113 @@ const Index = () => {
                   <br />
                   <span className="text-accent">ПРОДВИЖЕНИЯ И ЗАРАБОТКА</span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-lg">
                   Никакого программирования и технических сложностей. Только практика.
                 </p>
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
                     <Icon name="Calendar" className="text-primary" size={16} />
                   </div>
-                  <span className="text-lg text-muted-foreground">25 мая, 15:00</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">25 мая, 15:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center">
                     <Icon name="MapPin" className="text-secondary" size={16} />
                   </div>
-                  <span className="text-lg text-muted-foreground">Точка кипения, Владивосток</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">Точка кипения, Владивосток</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Icon name="User" className="text-accent" size={16} />
                   </div>
-                  <span className="text-lg text-muted-foreground">Ведущий — эксперт-практик Сергей Черников</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">Ведущий — эксперт-практик Сергей Черников</span>
                 </div>
               </div>
 
-              <div className="bg-card/50 backdrop-blur-sm border border-green-500/20 rounded-2xl p-8">
+              <div className="bg-card/50 backdrop-blur-sm border border-green-500/20 rounded-2xl p-6 sm:p-8">
                 <div className="text-center mb-6">
-                  <div className="inline-block px-6 py-2 bg-green-500/10 rounded-full border border-green-500/20 mb-4">
-                    <span className="text-sm text-green-400 font-medium">🎁 БЕСПЛАТНОЕ УЧАСТИЕ</span>
+                  <div className="inline-block px-4 sm:px-6 py-2 bg-green-500/10 rounded-full border border-green-500/20 mb-4">
+                    <span className="text-xs sm:text-sm text-green-400 font-medium">🎁 БЕСПЛАТНОЕ УЧАСТИЕ</span>
                   </div>
-                  <div className="text-3xl font-bold text-green-400 mb-2">0 ₽</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2">0 ₽</div>
                   <div className="text-sm text-muted-foreground">3 часа живого обучения + бонусы</div>
                 </div>
-                <Button size="lg" className="w-full text-lg font-bold py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
+                <Button size="lg" className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
                   ЗАНЯТЬ МЕСТО БЕСПЛАТНО
                 </Button>
-                <p className="text-sm text-muted-foreground mt-4 text-center">
+                <p className="text-xs sm:text-sm text-muted-foreground mt-4 text-center">
                   ⏰ Количество мест ограничено
                 </p>
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <div className="relative z-10">
                 <img 
                   src="/img/2335e96f-ac5d-424f-a1f0-af4368375f17.jpg" 
                   alt="Нейросети для бизнеса" 
-                  className="w-full h-auto rounded-3xl shadow-2xl border border-primary/20"
+                  className="w-full h-auto rounded-2xl sm:rounded-3xl shadow-2xl border border-primary/20"
                 />
               </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl opacity-60"></div>
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl sm:rounded-3xl blur-3xl opacity-60"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* What You Get Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">ЗА 3 ЧАСА ЖИВОЙ ВСТРЕЧИ ВО ВЛАДИВОСТОКЕ ВЫ ПОЛУЧИТЕ:</h2>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">ЗА 3 ЧАСА ЖИВОЙ ВСТРЕЧИ ВО ВЛАДИВОСТОКЕ ВЫ ПОЛУЧИТЕ:</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
-                  <Icon name="Zap" className="text-primary" size={32} />
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 sm:hover:scale-105">
+              <CardHeader className="p-4 sm:p-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="Zap" className="text-primary" size={24} />
                 </div>
-                <CardTitle className="text-xl text-primary">Всё для уверенного старта</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-lg sm:text-xl text-primary">Всё для уверенного старта</CardTitle>
+                <CardDescription className="text-sm sm:text-base text-muted-foreground">
                   в ChatGPT, Midjourney и ещё 7 актуальных нейросетях
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border border-secondary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader>
-                <div className="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
-                  <Icon name="FileText" className="text-secondary" size={32} />
+            <Card className="border border-secondary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 sm:hover:scale-105">
+              <CardHeader className="p-4 sm:p-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="FileText" className="text-secondary" size={24} />
                 </div>
-                <CardTitle className="text-xl text-secondary">Готовые запросы</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-lg sm:text-xl text-secondary">Готовые запросы</CardTitle>
+                <CardDescription className="text-sm sm:text-base text-muted-foreground">
                   для нейросетей под ваши задачи: от постов для соцсетей до разработки бизнес-стратегии
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border border-accent/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader>
-                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
-                  <Icon name="DollarSign" className="text-accent" size={32} />
+            <Card className="border border-accent/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 sm:hover:scale-105">
+              <CardHeader className="p-4 sm:p-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="DollarSign" className="text-accent" size={24} />
                 </div>
-                <CardTitle className="text-xl text-accent">Понятный алгоритм заработка</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-lg sm:text-xl text-accent">Понятный алгоритм заработка</CardTitle>
+                <CardDescription className="text-sm sm:text-base text-muted-foreground">
                   на нейросетях, который можно применить сразу после мастер-класса
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
-                  <Icon name="Star" className="text-primary" size={32} />
+            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 sm:hover:scale-105 sm:col-span-2 lg:col-span-1">
+              <CardHeader className="p-4 sm:p-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 icon-3d">
+                  <Icon name="Star" className="text-primary" size={24} />
                 </div>
-                <CardTitle className="text-xl text-primary">Лучшие кейсы</CardTitle>
+                <CardTitle className="text-lg sm:text-xl text-primary">Лучшие кейсы</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   использования AI в бизнесе, маркетинге и творчестве
                 </CardDescription>
@@ -145,41 +145,41 @@ const Index = () => {
       </section>
 
       {/* Possibilities Section */}
-      <section className="py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">ПРЕДСТАВЬТЕ, ЧТО ВЫ МОЖЕТЕ:</h2>
-            <p className="text-xl text-muted-foreground">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">ПРЕДСТАВЬТЕ, ЧТО ВЫ МОЖЕТЕ:</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
               Уже сегодня работа с нейросетями — это ключевой навык, который открывает новые возможности
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center icon-3d">
-                    <Icon name="Calendar" className="text-primary" size={32} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 sm:hover:scale-105">
+              <CardHeader className="text-center p-4 sm:p-6">
+                <div className="mx-auto mb-4 sm:mb-6">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center icon-3d">
+                    <Icon name="Calendar" className="text-primary" size={24} />
                   </div>
                 </div>
-                <CardTitle className="text-xl text-primary">Подготовить контент-план</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-lg sm:text-xl text-primary">Подготовить контент-план</CardTitle>
+                <CardDescription className="text-sm sm:text-base text-muted-foreground">
                   для всех соцсетей на месяц вперед за 20 минут
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border border-secondary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-6">
+            <Card className="border border-secondary/20 bg-card/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 sm:hover:scale-105">
+              <CardHeader className="text-center p-4 sm:p-6">
+                <div className="mx-auto mb-4 sm:mb-6">
                   <img 
                     src="/img/e3591367-62ca-442a-886d-060a0bc4cef6.jpg" 
                     alt="Creative AI" 
-                    className="w-20 h-20 object-cover rounded-2xl icon-3d"
+                    className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-2xl icon-3d"
                   />
                 </div>
-                <CardTitle className="text-xl text-secondary">Создать яркие иллюстрации</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-lg sm:text-xl text-secondary">Создать яркие иллюстрации</CardTitle>
+                <CardDescription className="text-sm sm:text-base text-muted-foreground">
                   баннеры и креативы для рекламы или презентаций за минуты
                 </CardDescription>
               </CardHeader>
@@ -245,13 +245,13 @@ const Index = () => {
       </section>
 
       {/* Myths Section */}
-      <section className="py-20 bg-gradient-to-r from-red-900/20 to-orange-900/20">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-red-900/20 to-orange-900/20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-orange-400">РАЗВЕЕМ ПОПУЛЯРНЫЕ МИФЫ:</h2>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-orange-400">РАЗВЕЕМ ПОПУЛЯРНЫЕ МИФЫ:</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             <div className="space-y-6">
               {[
                 {
@@ -304,28 +304,28 @@ const Index = () => {
       </section>
 
       {/* Expert Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">КТО ВЕДЕТ МАСТЕР-КЛАСС?</h2>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">КТО ВЕДЕТ МАСТЕР-КЛАСС?</h2>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <Card className="border border-primary/20 bg-card/50 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0">
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden flex-shrink-0">
                     <img 
                       src="https://cdn.poehali.dev/files/fe1c91cb-c68e-4c0e-b3b4-36284215fcea.png" 
                       alt="Сергей Черников" 
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-2 text-primary">
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-primary">
                       СЕРГЕЙ ЧЕРНИКОВ
                     </h3>
-                    <p className="text-lg text-secondary mb-4">
+                    <p className="text-base sm:text-lg text-secondary mb-4">
                       Эксперт-практик по внедрению нейросетей в бизнес и маркетинг.<br/>
                       Основатель первого в России AI-агентства.
                     </p>
@@ -356,13 +356,13 @@ const Index = () => {
       </section>
 
       {/* Program Section */}
-      <section className="py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">ЧТО МЫ УСПЕЕМ ЗА 3 ЧАСА:</h2>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">ЧТО МЫ УСПЕЕМ ЗА 3 ЧАСА:</h2>
           </div>
           
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-6 sm:gap-8">
             {[
               {
                 title: "Быстрый старт в нейросетях",
@@ -398,14 +398,14 @@ const Index = () => {
               }
             ].map((item, index) => (
               <Card key={index} className="border border-primary/20 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                <CardHeader className="p-4 sm:p-6">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold flex-shrink-0 text-sm sm:text-base">
                       {index + 1}
                     </div>
                     <div>
-                      <CardTitle className="text-xl text-primary">{item.title}</CardTitle>
-                      <CardDescription className="text-base mt-2 text-muted-foreground">{item.description}</CardDescription>
+                      <CardTitle className="text-base sm:text-lg lg:text-xl text-primary">{item.title}</CardTitle>
+                      <CardDescription className="text-sm sm:text-base mt-1 sm:mt-2 text-muted-foreground">{item.description}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -416,64 +416,68 @@ const Index = () => {
       </section>
 
       {/* Registration Form */}
-      <section className="py-20 bg-gradient-to-r from-green-900/20 to-primary/20">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-green-900/20 to-primary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">РЕГИСТРАЦИЯ НА МАСТЕР-КЛАСС</h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">РЕГИСТРАЦИЯ НА МАСТЕР-КЛАСС</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-6 sm:mb-8">
               Готовы получить самый востребованный навык 2025 года?
             </p>
             
-            <Card className="border border-green-500/20 shadow-2xl bg-card/80 backdrop-blur-sm mb-8">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="grid gap-4">
-                    <Input placeholder="Введите ваше имя" className="text-lg p-6 bg-background/50" />
-                    <Input placeholder="Введите ваш эл. адрес" type="email" className="text-lg p-6 bg-background/50" />
-                    <Input placeholder="Введите ваш телефон" type="tel" className="text-lg p-6 bg-background/50" />
+            <Card className="border border-green-500/20 shadow-2xl bg-card/80 backdrop-blur-sm mb-6 sm:mb-8">
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="grid gap-3 sm:gap-4">
+                    <Input placeholder="Введите ваше имя" className="text-base sm:text-lg p-4 sm:p-6 bg-background/50" />
+                    <Input placeholder="Введите ваш эл. адрес" type="email" className="text-base sm:text-lg p-4 sm:p-6 bg-background/50" />
+                    <Input placeholder="Введите ваш телефон" type="tel" className="text-base sm:text-lg p-4 sm:p-6 bg-background/50" />
                   </div>
                   
-                  <div className="bg-green-500/10 rounded-lg p-6 text-left border border-green-500/20">
-                    <h3 className="font-semibold mb-3 text-green-400">🎁 Что вы получаете:</h3>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
+                  <div className="bg-green-500/10 rounded-lg p-4 sm:p-6 text-left border border-green-500/20">
+                    <h3 className="font-semibold mb-3 text-green-400 text-sm sm:text-base">🎁 Что вы получаете:</h3>
+                    <div className="space-y-2 text-xs sm:text-sm">
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={14} />
                         <span>Бесплатное участие в живом 3-часовом мастер-классе</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={14} />
                         <span>Возможность задать вопрос Сергею Черникову лично</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={14} />
                         <span>Бонус: Гайд «15 задач по созданию контента с помощью нейросетей»</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" className="text-green-400" size={16} />
+                      <div className="flex items-start gap-2">
+                        <Icon name="Check" className="text-green-400 flex-shrink-0 mt-0.5" size={14} />
                         <span>Нетворкинг с предпринимателями и специалистами Владивостока</span>
                       </div>
                     </div>
                   </div>
                   
-                  <Button size="lg" className="w-full text-lg font-bold py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
+                  <Button size="lg" className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
                     ЗАПИСАТЬСЯ НА МАСТЕР-КЛАСС
                   </Button>
                   
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     Нажимая на кнопку, я даю согласие на обработку персональных данных в соответствии с условиями Политики конфиденциальности и Оферты, а также на получение информационных рассылок.
                   </p>
                 </div>
               </CardContent>
             </Card>
 
-            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/20">
-              <div className="flex items-center gap-4 text-muted-foreground">
-                <Icon name="Calendar" className="text-primary" size={20} />
-                <span><strong>Когда:</strong> 25 мая, в 15:00 по владивостокскому времени</span>
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-primary/20">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground mb-3 sm:mb-2">
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <Icon name="Calendar" className="text-primary flex-shrink-0" size={20} />
+                  <span className="text-sm sm:text-base"><strong>Когда:</strong> 25 мая, в 15:00 по владивостокскому времени</span>
+                </div>
               </div>
-              <div className="flex items-center gap-4 text-muted-foreground mt-2">
-                <Icon name="MapPin" className="text-secondary" size={20} />
-                <span><strong>Где:</strong> г. Владивосток, ул. Светланская, 22, «Точка кипения»</span>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
+                <div className="flex items-start gap-2 sm:gap-4">
+                  <Icon name="MapPin" className="text-secondary flex-shrink-0 mt-0.5 sm:mt-0" size={20} />
+                  <span className="text-sm sm:text-base"><strong>Где:</strong> г. Владивосток, ул. Светланская, 22, «Точка кипения»</span>
+                </div>
               </div>
             </div>
           </div>
@@ -481,9 +485,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 bg-card/20 backdrop-blur-sm border-t border-primary/20">
+      <footer className="py-6 sm:py-8 lg:py-10 bg-card/20 backdrop-blur-sm border-t border-primary/20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-xs sm:text-sm">
             © 2025 Все права защищены<br/>
             ИП Черников Сергей Николаевич
           </p>
