@@ -316,7 +316,7 @@ const Index = () => {
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
                   <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden flex-shrink-0">
                     <img 
-                      src="https://cdn.poehali.dev/files/fe1c91cb-c68e-4c0e-b3b4-36284215fcea.png" 
+                      src="https://cdn.poehali.dev/files/d033ddc2-6adc-4956-aff3-238ed23148fa.png" 
                       alt="Сергей Черников" 
                       className="w-full h-full object-cover"
                     />
