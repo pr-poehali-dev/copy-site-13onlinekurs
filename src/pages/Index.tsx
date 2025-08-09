@@ -12,7 +12,7 @@ const Index = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setAvailableSpots(prev => prev > 0 ? prev - 1 : 0);
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
