@@ -38,13 +38,13 @@ const Index = () => {
                   <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
                     <Icon name="Calendar" className="text-primary" size={16} />
                   </div>
-                  <span className="text-base sm:text-lg text-muted-foreground">25 мая, 15:00</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">20 августа, 19:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center">
                     <Icon name="MapPin" className="text-secondary" size={16} />
                   </div>
-                  <span className="text-base sm:text-lg text-muted-foreground">Точка кипения, Владивосток</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">Фактура, Владивосток</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -62,8 +62,12 @@ const Index = () => {
                   <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2">0 ₽</div>
                   <div className="text-sm text-muted-foreground">3 часа живого обучения + бонусы</div>
                 </div>
-                <Button size="lg" className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
-                  ЗАНЯТЬ МЕСТО БЕСПЛАТНО
+                <Button 
+                  size="lg" 
+                  className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform"
+                  onClick={() => window.open('https://forms.gle/yH8Qj44gbYAbWgfZ6', '_blank')}
+                >
+                  ЗАНЯТЬ СВОЕ МЕСТО
                 </Button>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-4 text-center">
                   ⏰ Количество мест ограничено
@@ -427,11 +431,7 @@ const Index = () => {
             <Card className="border border-green-500/20 shadow-2xl bg-card/80 backdrop-blur-sm mb-6 sm:mb-8">
               <CardContent className="p-4 sm:p-6 lg:p-8">
                 <div className="space-y-4 sm:space-y-6">
-                  <div className="grid gap-3 sm:gap-4">
-                    <Input placeholder="Введите ваше имя" className="text-base sm:text-lg p-4 sm:p-6 bg-background/50" />
-                    <Input placeholder="Введите ваш эл. адрес" type="email" className="text-base sm:text-lg p-4 sm:p-6 bg-background/50" />
-                    <Input placeholder="Введите ваш телефон" type="tel" className="text-base sm:text-lg p-4 sm:p-6 bg-background/50" />
-                  </div>
+
                   
                   <div className="bg-green-500/10 rounded-lg p-4 sm:p-6 text-left border border-green-500/20">
                     <h3 className="font-semibold mb-3 text-green-400 text-sm sm:text-base">🎁 Что вы получаете:</h3>
@@ -455,7 +455,11 @@ const Index = () => {
                     </div>
                   </div>
                   
-                  <Button size="lg" className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform">
+                  <Button 
+                    size="lg" 
+                    className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform"
+                    onClick={() => window.open('https://forms.gle/yH8Qj44gbYAbWgfZ6', '_blank')}
+                  >
                     ЗАПИСАТЬСЯ НА МАСТЕР-КЛАСС
                   </Button>
                   
@@ -467,16 +471,24 @@ const Index = () => {
             </Card>
 
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-primary/20">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground mb-3 sm:mb-2">
-                <div className="flex items-center gap-2 sm:gap-4">
-                  <Icon name="Calendar" className="text-primary flex-shrink-0" size={20} />
-                  <span className="text-sm sm:text-base"><strong>Когда:</strong> 25 мая, в 15:00 по владивостокскому времени</span>
+              <div className="space-y-3">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
+                  <div className="flex items-center gap-2 sm:gap-4">
+                    <Icon name="Calendar" className="text-primary flex-shrink-0" size={20} />
+                    <span className="text-sm sm:text-base"><strong>Когда:</strong> 20 августа, в 19:00</span>
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
-                <div className="flex items-start gap-2 sm:gap-4">
-                  <Icon name="MapPin" className="text-secondary flex-shrink-0 mt-0.5 sm:mt-0" size={20} />
-                  <span className="text-sm sm:text-base"><strong>Где:</strong> г. Владивосток, ул. Светланская, 22, «Точка кипения»</span>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
+                  <div className="flex items-start gap-2 sm:gap-4">
+                    <Icon name="MapPin" className="text-secondary flex-shrink-0 mt-0.5 sm:mt-0" size={20} />
+                    <span className="text-sm sm:text-base"><strong>Где:</strong> Фактура, Партизанский просп., 44, корп. 10</span>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
+                  <div className="flex items-center gap-2 sm:gap-4">
+                    <Icon name="Users" className="text-green-400 flex-shrink-0" size={20} />
+                    <span className="text-sm sm:text-base"><strong>Мест:</strong> 30</span>
+                  </div>
                 </div>
               </div>
             </div>
