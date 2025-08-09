@@ -4,8 +4,19 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import NeuralBackground from '@/components/NeuralBackground';
+import { useState, useEffect } from 'react';
 
 const Index = () => {
+  const [availableSpots, setAvailableSpots] = useState(40);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAvailableSpots(prev => prev > 0 ? prev - 1 : 0);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen relative">
       <NeuralBackground />
@@ -69,9 +80,17 @@ const Index = () => {
                 >
                   ЗАНЯТЬ СВОЕ МЕСТО
                 </Button>
-                <p className="text-xs sm:text-sm text-muted-foreground mt-4 text-center">
-                  ⏰ Количество мест ограничено
-                </p>
+                <div className="mt-4 text-center">
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-2">
+                    ⏰ Количество мест ограничено
+                  </p>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full">
+                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-bold text-red-400 transition-all duration-500 transform">
+                      Осталось: <span className="text-lg animate-pulse">{availableSpots}</span> мест
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -487,7 +506,7 @@ const Index = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
                   <div className="flex items-center gap-2 sm:gap-4">
                     <Icon name="Users" className="text-green-400 flex-shrink-0" size={20} />
-                    <span className="text-sm sm:text-base"><strong>Мест:</strong> 30</span>
+                    <span className="text-sm sm:text-base"><strong>Мест:</strong> 40</span>
                   </div>
                 </div>
               </div>
