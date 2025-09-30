@@ -12,7 +12,7 @@ const Index = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setAvailableSpots(prev => prev > 0 ? prev - 1 : 0);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -49,7 +49,7 @@ const Index = () => {
                   <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
                     <Icon name="Calendar" className="text-primary" size={16} />
                   </div>
-                  <span className="text-base sm:text-lg text-muted-foreground">20 августа, 19:00</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">8 октября, 19:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center">
@@ -76,7 +76,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform"
-                  onClick={() => window.open('https://forms.gle/yH8Qj44gbYAbWgfZ6', '_blank')}
+                  onClick={() => window.open('https://forms.gle/E4wCG7mxNjnP8x8i8', '_blank')}
                 >
                   ЗАНЯТЬ СВОЕ МЕСТО
                 </Button>
@@ -477,7 +477,7 @@ const Index = () => {
                   <Button 
                     size="lg" 
                     className="w-full text-base sm:text-lg font-bold py-4 sm:py-6 bg-gradient-to-r from-green-500 to-primary hover:scale-105 transition-transform"
-                    onClick={() => window.open('https://forms.gle/yH8Qj44gbYAbWgfZ6', '_blank')}
+                    onClick={() => window.open('https://forms.gle/E4wCG7mxNjnP8x8i8', '_blank')}
                   >
                     ЗАПИСАТЬСЯ НА МАСТЕР-КЛАСС
                   </Button>
@@ -494,7 +494,7 @@ const Index = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
                   <div className="flex items-center gap-2 sm:gap-4">
                     <Icon name="Calendar" className="text-primary flex-shrink-0" size={20} />
-                    <span className="text-sm sm:text-base"><strong>Когда:</strong> 20 августа, в 19:00</span>
+                    <span className="text-sm sm:text-base"><strong>Когда:</strong> 8 октября, в 19:00</span>
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground">
