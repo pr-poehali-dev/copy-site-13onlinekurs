@@ -49,7 +49,7 @@ const Index = () => {
                   <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
                     <Icon name="Calendar" className="text-primary" size={16} />
                   </div>
-                  <span className="text-base sm:text-lg text-muted-foreground">8 октября, 19:00</span>
+                  <span className="text-base sm:text-lg text-muted-foreground">21 октября, 19:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center">
